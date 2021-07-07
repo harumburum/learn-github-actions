@@ -1,0 +1,9 @@
+name: learn-github-actions
+on: [push]
+jobs:
+  build-project:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
+      - run: dotnet build learn-github-actions.csproj
