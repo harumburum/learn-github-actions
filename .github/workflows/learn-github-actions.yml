@@ -6,6 +6,6 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - uses: actions/setup-node@v2
-      - run: dotnet build learn-github-actions.csproj
+      - run: .\build.ps1
       - run: echo ${{ github.run_id }}
       - run: echo ${{ github.run_number }}
